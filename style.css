@@ -1,0 +1,18 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+section h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+article {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.jumbotron {
+    background-color: lightpink;
+
+}
+
