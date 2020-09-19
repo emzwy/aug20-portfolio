@@ -1,18 +1,76 @@
+/*Set margin to 0px to remove border wrapping around webpage*/
+* {
+    box-sizing: border-box;
+}
+/*Use display block to enable image to be centered. margin auto means that the margins are automatically set for top, bottom, left, right*/
+/*display block can be used for anything that is not a block*/
+img {
+    display: block;
+    margin: auto;
+}
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'solway', serif;
+    font-weight: bold;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    line-height: 1.4cm;
+    margin: 0px;
+}
+nav, footer {
+    background-color: #3a3a3a;
+}
+/*Specify underline property for each navigation button by using a href tag*/
+nav a {
+    color: white;
+    font-weight: normal;
+    padding: 10px;
+    /*margin for nav a to create space between nav buttons*/
+    margin: 20px;
+    text-decoration: underline;
 }
 
-section h1 {
-    font-family: 'Pacifico', cursive;
+h1 {
+    margin: 0px;
+}
+footer {
+    font-weight: normal;
+    color: white;
+    display: block;
+    padding: 20px;
+    margin: auto;
+}
+footer p {
+    margin: 0px;
+    padding-top: 0px;
+}
+section  {
+    border: 3px dashed #3a3a3a;
+    width: 60%;
+    min-width: 320px;
+    height: initial;
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+/*Specify 0px margin to reduce spacing between paragraphs*/
+section p {
+    margin: 0px;
+}
+
+section p::first-letter {
+    font-size: 200%;
 }
 
 article {
-    margin-left: 70px;
-    margin-right: 70px;
+    border: 3px solid #fae332;
+    border-radius: 10px;
+    background-color: #fae332;
+    color: black;
+    font-family: 'noto sans', sans-serif;
+    display: block;
+    width: 8cm;
+    height: initial;
+    margin: auto;
 }
-
-.jumbotron {
-    background-color: lightpink;
-
-}
-
