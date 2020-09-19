@@ -1,18 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+section #employment .descriptions {
+    min-height: calc(100vh - 60px - 104px)
+}
+
 body {
-    font-family: 'Quicksand', sans-serif;
+    background-color: #ee7354;
+    font-family: 'raleway', 'sans-serif';
+    max-width: 600px;
+    margin: auto;
 }
 
-section h1 {
-    font-family: 'Pacifico', cursive;
+/*Set color of link to orange*/
+a {
+    color: #ee7354;
 }
 
-article {
-    margin-left: 70px;
-    margin-right: 70px;
+h1 {
+    text-transform: capitalize;
+    color: #ee7354
+}
+/*To set black border around sections*/
+section {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+header {
+    display: block;
+    margin: auto;
+    background-image: url(https://i.imgur.com/qhLToSP.jpg);
+    /*to ensure that bg image covers the screen and the orientation remains at the center*/
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+
 }
 
-.jumbotron {
-    background-color: lightpink;
+/*To ensure table has collapsed borders*/
+/*Without border collapse, the table will have double borders because both the table and the <td> elements have separate borders.*/
 
+table {
+
+    border-collapse: collapse;
 }
 
+/*Table styling*/
+table, td {
+
+    border: 1px solid #ee7354;
+    padding: 7px;
+}
+
+h2 {
+    text-decoration: underline;
+    color: #ee7354;
+}
+
+/*Set styling for "Hover over the shuriken to spin it"*/
+#hover-image {
+
+    color: #ee7354;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Setting rotation to shuriken when mouse hovers over it*/
+/**img:hover {
+    transform: rotate(360deg)
+    
+}
+
+/*Setting duration of shuriken rotation and center the image*/
+/**img {
+    transition-duration: 0.5s;
+    display: block;
+    margin: auto;
+}
+
+/*alternative*/
+/**Use keyframes. Define name of animation (Superspin), set the type of animation then 
+use the same animation name on the image to apply animation**/
+
+@keyframes Superspin {
+    from {transform: rotate(0deg); }
+    to {transform: rotate(360deg); }
+}
+
+/**To ensure that animation applies on hover**/
+#hover-image img:hover {
+    animation: Superspin 1s infinite;
+}
+
+#hover-image {
+    max-width: 100%;
+}
+
+/*Setting styling and border property for sections*/
+section {
+    background-color: white;
+    display: block;
+    margin: auto;
+    color: black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    border-color: black;
+
+}
