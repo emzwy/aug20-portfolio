@@ -1,18 +1,49 @@
-body {
-    font-family: 'Quicksand', sans-serif;
+nav, aside, footer, section {
+    position: fixed;
+}
+nav {
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px; /*can also use vh*/
+    background-color: yellow;
+}
+.right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-section h1 {
-    font-family: 'Pacifico', cursive;
+section {
+    
+    top: 60px;
+    left: 0;
+    right: 200px; /*can also be a percentage, but it must always be the same as Aside width*/
+    bottom: 40px;
+    background-color: orange;
 }
 
-article {
-    margin-left: 70px;
-    margin-right: 70px;
+aside {
+   
+    top: 60px;
+    right: 0;
+    width: 200px;
+    bottom: 40px;
+    background-color: blue
 }
 
-.jumbotron {
-    background-color: lightpink;
-
+footer {
+   
+    bottom:0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: pink;
+    
 }
 
+.footer-desc {
+    display: inline-block;
+    margin: auto;
+}

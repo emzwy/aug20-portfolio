@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+    margin: 0;
+}
+
+nav, section, aside, footer {
+    position: fixed;
+    border: 1px solid blue;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    
+    /**alternative
+
+    display: flex;
+    justify-content: space-between
+    padding: 10px;**/
+}
+
+nav h1 {
+    position: absolute;
+    float: left;
+    left: 20px;
+    transform: translateY(-30%);
+
+    
+}
+
+nav h2 {
+    position: absolute;
+    float: right;
+    right: 20px;
+    transform: translateY(-30%);
+    color: grey;
+}
+
+section {
+
+    top: 60px;
+    left: 0px;
+    right: 50%;
+    bottom: 60px;
+
+    /*alternative
+    display: flex; (by default, it is in row. must change to column)
+    flex-direction: columm;
+    align-items: center;
+    justify-contents: center;*/
+}
+
+
+
+section h3 {
+    color:grey;
+
+}
+   
+section .description {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+section .description h2 {
+    font-size: 50px;
+}
+
+section .description h3 {
+    font-size: 25px;
+}
+
+/*hiding border of form*/
+section .description input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: solid 1px gray;
+    height: 40px;
+    width: 80%;
+}
+
+section .description .custom-button {
+    margin-top: 10px;
+    background-color: darkslategray;
+    color: white;
+    height: 40px;
+    width: 80%;
+}
+
+section .social-media {
+    padding: 10px;
+
+}
+
+section .social-media .fb, .pinterest, .ig {
+    padding: 10px;
+}
+
+aside {
+    top: 60px;
+    width: 10 0%;
+    left: 50%;
+    bottom: 60px;
+        
+    /*the preferred choice is background-image for responsiveness
+    background-image: url('https://goshoe-next.netlify.app/shoes.png')
+    background-size: cover;
+    background-position: center;
+    right: 0;*/
+}
+
+aside img {
+    
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+footer {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    clear: both;
+    color: grey;
+    font-size: small;
+    margin: 0;
+}
+
+footer .contact p {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    left: 20px;
+    transform: translateY(-10%);
+
+}
+
+footer .hq p {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    right: 20px;
+    transform: translateY(-10%);
+    text-align: right;
+}
